@@ -1,0 +1,17 @@
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.alura.jdbc.modelo.Produto;
+
+public class TestaInsercaoComProduto {
+
+	public static void main(String[] args) throws SQLException {
+
+		Produto comoda = new Produto("CÔMODA", "CÔMODA VERTICAL");
+
+		try (Connection connection = new ConnectionFactory().recuperaConexao()) {
+			String sql = "INSERT INTO PRODUTO (NOME, DESCRICAO) VALUES (?,?)";
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+1644859777808	Rename type 'CriaConexa'
+1644946158313	Extract method 'adicionarVariavel'
+1645033429654	Delete element
+1645033562724	Copy package
+1645033567981	Delete element
+1645040172341	Move compilation units
+1645040938424	Rename type 'PersistenciaProduto'
+1645040991763	Move compilation unit
+1645041015304	Delete element
+1645041088806	Move compilation units
+1645041126963	Rename package 'br.com.alura.jdbc.modelo'
+1645042206824	Move compilation unit
+1645042263105	Move compilation unit
+1645043088454	Rename type 'TestaInsercaoComProduto'
+1645043125777	Rename package 'br.com.alura.jdbc.modelo'
+1645043308493	Delete element
+1645043338186	Delete element
+1645043440836	Move compilation units
+1645044840755	Move compilation unit
+1645045046272	Move compilation unit
+1645045101266	Move compilation unit
+1645045113442	Delete element
+1645045146632	Move compilation unit
+1645045170523	Move compilation unit
+1645045175848	Delete elements
+1645045335158	Rename package 'br.com.alura.jdbc.DAO'

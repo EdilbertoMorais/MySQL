@@ -1,0 +1,10 @@
+
+public class TestaInsercaoComProduto {
+
+	public static void main(String[] args) {
+		
+		Produto comoda = new Produto("CÔMODA","CÔMODA VERTICAL");
+
+	}
+
+}

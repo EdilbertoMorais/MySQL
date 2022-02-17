@@ -1,0 +1,22 @@
+package br.com.alura.jdbc;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+import br.com.alura.jdbc.dao.CategoriaDAO;
+import br.com.alura.jdbc.modelo.Categoria;
+
+public class TestaListagemDeCategorias {
+
+	public static void main(String[] args) throws SQLException {
+
+		try (Connection connection = new connectionFactory().recuperaConexao()) {
+			CategoriaDAO categoriaDAO = categoriaDAO(Connection);
+			List<Categoria> listaDeCategorias = categoriaDAO.listar();
+
+		}
+
+	}
+
+}
