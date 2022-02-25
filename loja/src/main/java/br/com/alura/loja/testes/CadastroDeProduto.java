@@ -1,9 +1,11 @@
 package br.com.alura.loja.testes;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import javax.persistence.EntityManager;
 
+import br.com.alura.loja.dao.CategoriaDao;
 import br.com.alura.loja.dao.ProdutoDao;
 import br.com.alura.loja.modelo.Categoria;
 import br.com.alura.loja.modelo.Produto;
@@ -13,13 +15,32 @@ public class CadastroDeProduto {
 
 	public static void main(String[] args) {
 		
-		Produto celular = new Produto("Samsung","Samsung S7 Edge", new BigDecimal("900"),Categoria.TELEFONIA);
+		cadastrarProduto();
+		EntityManager em = JPAUtil.getEntityManager();
+		ProdutoDao produtoDao = new ProdutoDao(em);
+		
+		Produto p = produtoDao.buscarPorId(1l);
+		System.out.println(p.getPreco());
+		
+		 List<Produto> todos = produtoDao.buscarPorNomeDaCategoria("TELEFONIA");
+		 todos.forEach(p2 -> System.out.println(p.getNome()));
+		 
+		 BigDecimal precoDoProduto = produtoDao.buscarPrecoDoProdutoComNome("Samsung");
+		 System.out.println("Preço do produto: " + precoDoProduto);
+	}
+
+	private static void cadastrarProduto() {
+		Categoria telefonia = new Categoria("TELEFONIA");
+		Produto celular = new Produto("Samsung","Samsung S7 Edge", new BigDecimal("900"),telefonia);
 		
 		EntityManager em = JPAUtil.getEntityManager();
-		ProdutoDao dao = new ProdutoDao(em);
+		ProdutoDao produtoDao = new ProdutoDao(em);
+		CategoriaDao categoriaDao = new CategoriaDao(em);
 		
 		em.getTransaction().begin();
-		dao.cadastrar(celular);
+		
+		categoriaDao.cadastrar(telefonia);
+		produtoDao.cadastrar(celular);
 		em.getTransaction().commit();
 		em.close();
 	}

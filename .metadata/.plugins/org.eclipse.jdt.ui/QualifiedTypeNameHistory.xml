@@ -25,4 +25,19 @@
     <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="br.com.alura.jdbc.factory.ConnectionFactory"/>
     <fullyQualifiedTypeName name="br.com.alura.jdbc.dao.ProdutoDAO"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="br.com.alura.loja.modelo.Produto"/>
+    <fullyQualifiedTypeName name="java.math.BigDecimal"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="java.lang.Process"/>
+    <fullyQualifiedTypeName name="br.com.alura.loja.dao.ProdutoDao"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.JPAIndexHolder"/>
+    <fullyQualifiedTypeName name="br.com.alura.loja.util.JPAUtil"/>
+    <fullyQualifiedTypeName name="br.com.alura.loja.modelo.Categoria"/>
+    <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
 </qualifiedTypeNameHistroy>
